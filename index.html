@@ -627,7 +627,7 @@ function closeModal() {
 
 function checkPw() {
   const val = document.getElementById('pwInput').value.trim().toLowerCase();
-  if (val === 'mpenzi') {
+  if (val === 'mpenzii') {
     document.getElementById('overlay').classList.add('show-msg');
     spawnConfetti();
   } else {
@@ -636,7 +636,7 @@ function checkPw() {
     inp.classList.remove('shake');
     void inp.offsetWidth;
     inp.classList.add('shake');
-    err.textContent = 'Hmm… that doesn\'t seem right, try again my love 💔';
+    err.innerHTML = '<div style="background:rgba(120,0,16,0.35);border:1px solid rgba(232,58,90,0.35);border-radius:16px 16px 16px 4px;padding:12px 16px;margin-top:6px;text-align:left;"><div style="font-family:Dancing Script,cursive;font-size:14px;color:#f4c06f;margin-bottom:5px;">💌 from me, to you…</div><div style="font-size:13px;color:rgba(255,210,220,0.92);line-height:1.7;font-style:italic;">Hmm my love, that is not quite right 🥺<br>Think a little harder — only you know this one.<br>I believe in you ♥</div></div>';
     setTimeout(() => inp.classList.remove('shake'), 500);
   }
 }
